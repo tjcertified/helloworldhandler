@@ -28,7 +28,7 @@ public class HelloWorldModule : IHttpModule
     }
 
     public void Init(HttpApplication application)
-    {         
+    {
         application.BeginRequest += Application_BeginRequest;
         application.EndRequest += Application_EndRequest;
         application.PreRequestHandlerExecute += Application_PreRequestHandlerExecute;
